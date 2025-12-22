@@ -73,7 +73,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # ✅ Third-party Integrations
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "")
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
-COOKIES = getenv("COOKIES", "")
+COOKIES = getenv("COOKIES", "https://batbin.me/bigotedness")
 
 # ✅ Image URLs
 START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/sjt2pe.jpg")
