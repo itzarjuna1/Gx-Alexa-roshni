@@ -8,8 +8,13 @@ Copyright (c) 2021 ~ Present Team Alexa <https://github.com/TheTeamAlexa>
 This program is free software: you can redistribute it and can modify
 as you want or you can collabe if you have new ideas.
 """
-
 import asyncio
+
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+
 import sys
 
 from AlexaMusic.core.bot import AlexaBot
