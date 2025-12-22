@@ -23,15 +23,15 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 # ✅ Mandatory Config
-API_ID = int(getenv("API_ID", "0"))
-API_HASH = getenv("API_HASH", "")
+API_ID = int(getenv("API_ID", "33984428"))
+API_HASH = getenv("API_HASH", "9ed45ce2cfa2dcf20895d8949a56ecbb")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
-OWNER_ID = int(getenv("OWNER_ID", "0"))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "0"))
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+OWNER_ID = int(getenv("OWNER_ID", "7852340648"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1003468243393"))
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 # ✅ Bot Identity
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "AlexaMusicBot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ROSHNI X MUSIC")
 
 # ✅ Optional & Feature Toggles
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
@@ -53,14 +53,14 @@ STRING5 = getenv("STRING_SESSION5", "")
 # ✅ Heroku & Git
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "")
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheTeamAlexa/AlexaMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itzarjuna1/Gx-Alexa-roshni")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/TheTeamAlexa/AlexaMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/itzarjuna1/Gx-Alexa-roshni")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 # ✅ Support Links
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/who_cares_qt")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Destiny_Infinity_Og")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dark_musict,")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Dark_musicsupport")
 
 # ✅ Size & Limit Controls
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "2"))
@@ -76,19 +76,19 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
 COOKIES = getenv("COOKIES", "")
 
 # ✅ Image URLs
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/d593c6064ff7657d0c714.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "assets/Ping.jpeg")
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "assets/Playlist.jpeg")
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "assets/Global.jpeg")
-STATS_IMG_URL = getenv("STATS_IMG_URL", "assets/Stats.jpeg")
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "assets/Audio.jpeg")
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "assets/Video.jpeg")
-STREAM_IMG_URL = getenv("STREAM_IMG_URL", "assets/Stream.jpeg")
-SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL", "assets/Soundcloud.jpeg")
-YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "assets/Youtube.jpeg")
-SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL", "assets/SpotifyArtist.jpeg")
-SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL", "assets/SpotifyAlbum.jpeg")
-SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", "assets/SpotifyPlaylist.jpeg")
+START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/sjt2pe.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/sjt2pe.jpg")
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://files.catbox.moe/sjt2pe.jpg")
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://files.catbox.moe/sjt2pe.jpg")
+STATS_IMG_URL = getenv("STATS_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
+TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://files.catbox.moe/zi9qyb.jpg")
+TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://files.catbox.moe/zi9qyb.jpg")
+STREAM_IMG_URL = getenv("STREAM_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
+SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
+YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
+SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
+SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
+SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", "https://files.catbox.moe/zi9qyb.jpg")
 
 # ✅ Duration Conversion
 DURATION_LIMIT = time_to_seconds(f"{DURATION_LIMIT_MIN}:00")
