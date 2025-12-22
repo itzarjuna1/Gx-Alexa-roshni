@@ -9,6 +9,8 @@ This program is free software: you can redistribute it and can modify
 as you want or you can collabe if you have new ideas.
 """
 
+import asyncio
+asyncio.set_event_loop(asyncio.new_event_loop())
 
 import asyncio
 import importlib
