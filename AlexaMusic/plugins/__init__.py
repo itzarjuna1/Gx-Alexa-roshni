@@ -11,19 +11,16 @@ as you want or you can collabe if you have new ideas.
 
 
 import glob
-from os.path import dirname, isfile
+import os
 
+BASE_DIR = os.path.dirname(__file__)
 
-def __list_all_modules():
-    work_dir = dirname(__file__)
-    mod_paths = glob.glob(f"{work_dir}/*/*.py")
-
-    return [
-        (((f.replace(work_dir, "")).replace("/", "."))[:-3])
-        for f in mod_paths
-        if isfile(f) and f.endswith(".py") and not f.endswith("__init__.py")
+ALL_MODULES = sorted(
+    [
+        os.path.splitext(os.path.basename(file))[0]
+        for file in glob.glob(os.path.join(BASE_DIR, "*.py"))
+        if not file.endswith("__init__.py")
     ]
+)
 
-
-ALL_MODULES = sorted(__list_all_modules())
 __all__ = ALL_MODULES + ["ALL_MODULES"]
