@@ -10,7 +10,6 @@ as you want or you can collabe if you have new ideas.
 """
 
 import asyncio
-asyncio.set_event_loop(asyncio.new_event_loop())
 
 import importlib
 from typing import Any
@@ -44,7 +43,7 @@ async def init() -> None:
     await app.start()
     await save_cookies()
     for module in ALL_MODULES:
-        importlib.import_module(f"AlexaMusic.plugins{module}")
+        importlib.import_module(f"AlexaMusic.plugins.{module}")
     LOGGER("AlexaMusic.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
     await Alexa.start()
