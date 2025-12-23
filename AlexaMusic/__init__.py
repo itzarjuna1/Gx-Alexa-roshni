@@ -8,13 +8,6 @@ TheTeamAlexa is a project of Telegram bots with variety of purposes.
 # =======================
 # 🔥 HARD EVENT LOOP FIX
 # =======================
-import asyncio
-import sys
-
-# Force default loop (Pyrogram-safe)
-asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
-asyncio.set_event_loop(asyncio.new_event_loop())
-
 # =======================
 # Normal Imports
 # =======================
